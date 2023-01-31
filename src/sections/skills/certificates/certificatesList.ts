@@ -1,3 +1,7 @@
+import imgJsComplete from 'assets/certificates/udemy-javascript.png'
+
+
+
 export type Certificate = {
   title: string;
   subtitle: string;
@@ -8,8 +12,8 @@ export type Certificate = {
   imageUrl: string;
 };
 
-const imgJsComplete = 'assets/certificates/udemy-javascript.png'
-const imgReactComplete = 'src/assets//certificates/udemy-react.png'
+// const imgJsComplete = 'assets/certificates/udemy-javascript.png'
+const imgReactComplete = 'src/assets/certificates/udemy-react.png'
 
 export const certList = [
   {
@@ -29,7 +33,7 @@ export const certList = [
     organisation: 'Free Code Camp',
     link: 'https://www.freecodecamp.org/certification/andy_ohhh/javascript-algorithms-and-data-structures',
     course: 'https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures',
-    imageUrl: 'assets//certificates/fcc_js_algos.png',
+    imageUrl: 'assets/certificates/fcc_js_algos.png',
   },
   {
     title: 'React',
