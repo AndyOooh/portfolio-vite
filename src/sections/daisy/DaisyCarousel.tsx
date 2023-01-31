@@ -1,5 +1,5 @@
 import Section from 'components/Section';
-import Certificates from 'sections/skills/certificates/Certificates copy 2';
+import Certificates from 'sections/skills/certificates/Certificates';
 
 type Props = {};
 
