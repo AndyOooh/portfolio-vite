@@ -1,17 +1,17 @@
-const salaryHeroImgRel = 'src/assets/projectImages/salaryHero.png' as string;
+import salaryHeroImgRel from 'assets/projectImages/salaryHero.png';
 
-const redbook1280Profile = '/src/assets/projectImages/redbook/1280-login.png' as string;
-const redbook1280Home = '/src/assets/projectImages/redbook/1280-home.png' as string;
-const redbook2560Home = '/src/assets/projectImages/redbook/2560-home.png' as string;
+import redbook1280Profile from 'assets/projectImages/redbook/1280-login.png';
+import redbook1280Home from 'assets/projectImages/redbook/1280-home.png';
+import redbook2560Home from 'assets/projectImages/redbook/2560-home.png';
 
-const persona1280Result = '/src/assets/projectImages/persona/1280-result.png' as string;
-const persona1280Start = '/src/assets/projectImages/persona/1280-start.png' as string;
+import persona1280Result from 'assets/projectImages/persona/1280-result.png';
+import persona1280Start from 'assets/projectImages/persona/1280-start.png';
 
-const lotteryBallot = '/src/assets/projectImages/lottery/1280-ballot.png' as string;
-const lotteryLottery = '/src/assets/projectImages/lottery/1280-lottery.png' as string;
+import lotteryBallot from 'assets/projectImages/lottery/1280-ballot.png';
+import lotteryLottery from 'assets/projectImages/lottery/1280-lottery.png';
 
-const sincityDex = '/src/assets/projectImages/sinCity/1280-dex.png' as string;
-const sincityRoulette = '/src/assets/projectImages/sinCity/1280-roulette.png' as string;
+import sincityDex from 'assets/projectImages/sinCity/1280-dex.png';
+import sincityRoulette from 'assets/projectImages/sinCity/1280-roulette.png';
 
 export type ProjectType = {
   video?: string;

@@ -31,6 +31,11 @@ function ReactSlick() {
     initialSlide: 0,
     arrows: false,
     // beforeChange: (current: any, next: any) => setCurrentSlide(next),
+    appendDots: (dots: any) => (
+      <div className='bg-green-500 border-4 border-yellow-300'>
+        <ul> {dots} </ul>
+      </div>
+    ),
   };
 
   const handleClickNavigation = (direction: string) => {
@@ -81,14 +86,14 @@ function ReactSlick() {
   return (
     <Section id='rpc' title='React Slick' topic='Does it work'>
       <div className='w-full flex-center h-full'>
-        <div className='relative w-full md:w-5/6'>
-          <Slider
-            ref={sliderRef}
-            {...settings}
-            // className='relative'
-          >
+        <div className='relative w-full md:w-5/6 h-full'>
+          <Slider ref={sliderRef} {...settings} className='relative'>
             {slides.map((slide, index) => {
-              return <div key={slide.name}>{slide.component}</div>;
+              return (
+                <div key={slide.name} className='px-2'>
+                  {slide.component}
+                </div>
+              );
             })}
           </Slider>
         </div>

@@ -22,12 +22,11 @@ function Section({ children, id, topic, title, between, center }: SectionProps) 
 
   return (
     <section id={id} className={styles.section}>
-      <div className={wrapperClasses}>
-        {/* <motion.div
+      <motion.div
         variants={sectionVariants}
         initial='hidden'
         whileInView='visible'
-        className={wrapperClasses}> */}
+        className={wrapperClasses}>
         {topic ? (
           <div className='text-center'>
             <h2 className='text-md sm:text-lg'>{topic}</h2>
@@ -38,8 +37,7 @@ function Section({ children, id, topic, title, between, center }: SectionProps) 
         {/* {center ? <div className='flex-center'>{children}</div> : children} */}
         {center ? <div className='flex-1'>{children}</div> : children}
         {/* <div className='h-12 w-full'></div> */}
-        {/* </motion.div> */}
-      </div>
+      </motion.div>
     </section>
   );
 }

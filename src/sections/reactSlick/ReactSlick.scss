@@ -1,7 +1,41 @@
+.slick-slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
 .slick-track {
   display: flex;
 
   align-items: center;
-  // justify-content: center;
-  // margin: 0 auto;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .slick-active {
+    background-color: var(--main);
+  }
+
+  li {
+    background-color: rgba(128, 128, 128, 0.523);
+    width: 0.75rem;
+    height: 0.75rem;
+
+    border-radius: 50%;
+
+    button::before {
+      display: none;
+      padding: 1rem;
+    }
+  }
 }
