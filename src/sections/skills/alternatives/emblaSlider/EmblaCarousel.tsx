@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import useEmblaCarousel, { EmblaOptionsType } from 'embla-carousel-react';
 import { DotButton, PrevButton, NextButton } from './EmblaCarouselArrowsDotsButtons';
 import imageByIndex from './ImageByIndex';
-import Certificates from 'sections/skills/certificates/Certificates copy';
+import Certificates from 'sections/skills/certificates/Certificates';
 
 type PropType = {
   slides: number[];

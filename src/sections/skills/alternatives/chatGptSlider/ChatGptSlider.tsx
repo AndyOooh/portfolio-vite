@@ -1,12 +1,12 @@
 import Section from 'components/Section';
 import { motion } from 'framer-motion';
-import { skillsVariants } from 'motion/skills.motion';
+// import { skillsVariants } from 'motion/skills.motion';
 import { useState } from 'react';
 import Certificates from 'sections/skills/certificates/Certificates';
 import List from 'sections/skills/list/List';
 // import ReactTagCloud from 'sections/skills/reactTagCloud/reactTagCloud';
 // import SkillsCloud from 'sections/skills/skillsCloud/SkillsCloud';
-import SkillsCloud from 'sections/skills/skillsCloud/SkillsCloud copy';
+import SkillsCloud from 'sections/skills/skillsCloud/SkillsCloud';
 
 function ChatGptSlider() {
   const topic = 'Skills';
@@ -66,22 +66,20 @@ function ChatGptSlider() {
       {/* <div className='flex-1 w-full  relative flex-center  border border-blue-400'> */}
       <div className='flex-1 w-full relative flex-center'>
         {/* <div className='relative border border-green-400'> */}
-        <motion.h1 variants={skillsVariants} initial='hidden' animate='visible' className='text-5xl'>
-          Test
-        </motion.h1>
+        {/* <motion.h1 variants={skillsVariants} initial='hidden' animate='visible' className='text-5xl'> */}
+        <h1>Test</h1>
+        {/* </motion.h1> */}
         {slides.map((slide, index) => {
           return (
             <motion.div
-              variants={skillsVariants}
-              initial='hidden'
-              animate='visible'
+              // variants={skillsVariants}
+              // initial='hidden'
+              // animate='visible'
               key={index}
               className={`${
                 slideIndex === index ? 'block' : 'hidden'
                 // } border-4 border-red-400 min-h-[30rem] w-full`}>
-              }  w-full`}
-              
-              >
+              }  w-full`}>
               {slide.component}
             </motion.div>
           );
