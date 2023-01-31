@@ -5,6 +5,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
+  base: './',
 });
 
 // https://stackoverflow.com/questions/68241263/absolute-path-not-working-in-vite-project-react-ts
