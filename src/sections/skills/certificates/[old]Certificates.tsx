@@ -1,4 +1,4 @@
-import CertificateModal from './CertificateModal Copy';
+import CertificateModal from './[old]CertificateModal';
 
 import { certList } from './certificatesList';
 

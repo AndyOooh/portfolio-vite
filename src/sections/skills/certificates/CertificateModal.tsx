@@ -34,7 +34,7 @@ function CertificateModal({ certificate: { imageUrl, title, link, course }, onCl
           href={course}
           target='_blank'
           rel='noreferrer'
-          className='px-6 backdrop-blur bg-black/20 btn-primary btn-outline border-2'>
+          className='px-6 backdrop-blur bg-white/40 btn-primary btn-outline border-2'>
           <GiOpenBook size={'2.2rem'} />
         </a>
       </div>

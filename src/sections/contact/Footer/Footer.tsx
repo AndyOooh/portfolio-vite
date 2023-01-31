@@ -1,12 +1,7 @@
-import { sectionLinks } from 'components/header/Header';
 import { SiCodewars, SiCodesandbox, SiFreecodecamp } from 'react-icons/si';
 import { BsLinkedin, BsGithub, BsStackOverflow } from 'react-icons/bs';
 
-// import './Footer.scss';
-
-type Props = {};
-
-function Footer({}: Props) {
+function Footer() {
   const socials = [
     {
       href: 'https://github.com/AndyOooh',
@@ -46,8 +41,6 @@ function Footer({}: Props) {
         andyo.xyz
       </a>
 
-      {/* <div className='grid grid-flow-col gap-1 w-full border-2 border-red-300'> */}
-      {/* <div className='flex justify-center flex-wrap gap-1 w-full border-2 border-red-300'> */}
       <div className='flex justify-center gap-1'>
         {socials.map((social, i) => (
           <div

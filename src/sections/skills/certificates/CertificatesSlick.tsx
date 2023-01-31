@@ -1,8 +1,6 @@
-'use client';
+import { useState } from 'react';
 
-import React, { useState } from 'react';
 import CertificateModal from './CertificateModal';
-
 import { certList } from './certificatesList';
 
 function Certificates() {

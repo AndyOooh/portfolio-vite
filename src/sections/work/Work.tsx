@@ -5,9 +5,10 @@ import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 // import 'swiper/scss/effect-fade';
 import { EffectFade, Navigation, Pagination } from 'swiper';
+
 import { projects } from './projects';
 // import SlideCard from './SlideCard';
-import SlideCard from './SlideCard copy';
+import SlideCard from './SlideCard';
 import Section from 'components/Section';
 
 import { useEffect, useState } from 'react';

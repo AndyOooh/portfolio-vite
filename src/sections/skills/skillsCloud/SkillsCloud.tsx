@@ -1,11 +1,10 @@
-import { useCallback } from 'react';
+import React, { useCallback } from 'react';
 import { TagCloudOptions } from 'TagCloud';
-import TagCloud from '@frank-mayer/react-tag-cloud';
+import { TagCloud } from '@frank-mayer/react-tag-cloud';
 import { useMediaQuery } from 'react-responsive';
 
 import './SkillsCloud.scss';
 import { cloudList } from './cloudList';
-import React from 'react';
 
 function SkillsCloud() {
   const isLgScreen = useMediaQuery({ query: '(min-width: 1024px)' });

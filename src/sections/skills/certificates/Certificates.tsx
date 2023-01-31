@@ -1,15 +1,12 @@
-'use client';
+import { useState } from 'react';
 
-import React, { useState } from 'react';
 import CertificateModal from './CertificateModal';
-
 import { certList } from './certificatesList';
 
 function Certificates() {
-  const [open, setOpen] = useState(0);
+  const [modalIndex, setModalIndex] = useState(0);
   const handleToggle = (idx: number) => {
-    console.log('handleToggle');
-    setOpen(idx);
+    setModalIndex(idx);
   };
   return (
     <>
@@ -26,8 +23,8 @@ function Certificates() {
           </div>
         ))}
       </div>
-      {open ? (
-        <CertificateModal certificate={certList[open - 1]} onClose={() => handleToggle(0)} />
+      {modalIndex ? (
+        <CertificateModal certificate={certList[modalIndex - 1]} onClose={() => handleToggle(0)} />
       ) : null}
     </>
   );

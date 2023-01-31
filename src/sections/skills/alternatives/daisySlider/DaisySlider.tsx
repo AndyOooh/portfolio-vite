@@ -3,7 +3,7 @@ import Certificates from 'sections/skills/certificates/Certificates';
 
 type Props = {};
 
-function SlickCarousel({}: Props) {
+function DaisySlider({}: Props) {
   return (
     <>
       <Section id='daisy' title='daisy' topic='carousel' center>
@@ -72,4 +72,4 @@ function SlickCarousel({}: Props) {
   );
 }
 
-export default SlickCarousel;
+export default DaisySlider;

@@ -9,7 +9,6 @@ import { particlesOptions } from 'particles/hexagon.particles';
 // import { particlesOptions } from 'particles/bg-mask.particles';
 
 import 'styles/globals.scss';
-// import Header from './components/header/Header';
 import { useWindowSize } from 'usehooks-ts';
 import Header from './header/Header';
 import { styles } from 'styles';

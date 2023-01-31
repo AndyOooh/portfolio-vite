@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import Section from 'components/Section';
-import ProfileImage from './ProfileImage';
 
 import meImg from 'assets/me/new-profile-crop2.png';
 
@@ -25,7 +24,6 @@ function About() {
           <span>bootcamps</span>, personal projects and a few collaborations.
         </p>
         <div className='flex gap-4 w-1/2 mx-auto'>
-          {/* <ProfileImage image={meImg} className='filter grayscale aspect-square' /> */}
           <div className='inner-shad relative rounded-full flex-1 overflow-hidden h-full aspect-square'>
             <img src={meImg} alt='profile' className='filter grayscale aspect-square w-full' />
           </div>

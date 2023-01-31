@@ -1,23 +1,18 @@
-'use client';
-
-import React, { FormEvent, useEffect, useRef, useState } from 'react';
+import { FormEvent, useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
 
 import { formVariants } from 'motion/contact.motion';
 
-type Props = {};
-
 type Status = 'idle' | 'sending' | 'success' | 'error';
 
-function EmailForm({}: Props) {
+function EmailForm() {
   const formRef = useRef<HTMLFormElement>(null);
   const isSmScreen = useMediaQuery({ query: '(min-width: 640px)' });
   const [status, setStatus] = useState<Status>('idle');
 
   useEffect(() => {
- 
     const timer = setTimeout(() => {
       setStatus('idle');
     }, 10000);
