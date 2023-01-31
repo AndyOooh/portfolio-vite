@@ -8,6 +8,9 @@ export type Certificate = {
   imageUrl: string;
 };
 
+const imgJsComplete = 'assets/certificates/udemy-javascript.png'
+const imgReactComplete = 'src/assets//certificates/udemy-react.png'
+
 export const certList = [
   {
     title: 'Javascript',
@@ -16,7 +19,8 @@ export const certList = [
     organisation: 'Academind',
     link: 'https://www.youracclaim.com/badges/1b1b1b1b-1b1b-1b1b-1b1b-1b1b1b1b1b1b/public_url',
     course: 'https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/',
-    imageUrl: 'src/assets/certificates/udemy-javascript.png',
+    // imageUrl: 'src/assets/certificates/udemy-javascript.png',
+    imageUrl: imgJsComplete,
   },
   {
     title: 'Javascript',
@@ -25,7 +29,7 @@ export const certList = [
     organisation: 'Free Code Camp',
     link: 'https://www.freecodecamp.org/certification/andy_ohhh/javascript-algorithms-and-data-structures',
     course: 'https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures',
-    imageUrl: 'src/assets//certificates/fcc_js_algos.png',
+    imageUrl: 'assets//certificates/fcc_js_algos.png',
   },
   {
     title: 'React',
@@ -34,7 +38,8 @@ export const certList = [
     organisation: 'Academind',
     link: 'https://www.udemy.com/certificate/UC-e6c12401-9179-4420-9be7-f8d8123853c3/',
     course: 'https://www.udemy.com/course/react-the-complete-guide-incl-redux/',
-    imageUrl: 'src/assets//certificates/udemy-react.png',
+    // imageUrl: 'src/assets//certificates/udemy-react.png',
+    imageUrl: imgReactComplete,
   },
 
   {
