@@ -12,9 +12,6 @@ import { FaNodeJs, FaReact, FaSass } from 'react-icons/fa';
 import { TiPlus } from 'react-icons/ti';
 import { FiFramer } from 'react-icons/fi';
 
-const mainLogoSize = '1.5rem';
-const secondaryLogoSize = '1rem';
-
 export const logos = {
   intro: {
     main: [
@@ -24,21 +21,21 @@ export const logos = {
       },
       {
         name: 'express',
-        logo: <SiExpress size={mainLogoSize} color='#5A8147' className='logo-main' />,
+        logo: <SiExpress color='#5A8147' className='logo-main' />,
       },
       {
         name: 'react',
-        logo: <FaReact size={mainLogoSize} color='#00CDF0' className='logo-main' />,
+        logo: <FaReact color='#00CDF0' className='logo-main' />,
       },
       {
         name: 'nodejs',
-        logo: <FaNodeJs size={mainLogoSize} color='#5A8147' className='logo-main' />,
+        logo: <FaNodeJs color='#5A8147' className='logo-main' />,
       },
     ],
     secondary: [
       {
         name: 'typescript',
-        logo: <SiTypescript size={mainLogoSize} color='#000' className='logo-main bg-[#007ACC]' />,
+        logo: <SiTypescript color='#000' className='logo-main bg-[#007ACC]' />,
       },
       {
         name: 'turborepo',
@@ -62,7 +59,7 @@ export const logos = {
     main: [
       {
         name: 'react',
-        logo: <FaReact size={mainLogoSize} color='#00CDF0' className='logo-main' />,
+        logo: <FaReact color='#00CDF0' className='logo-main' />,
       },
       {
         name: 'nextjs',
@@ -85,6 +82,22 @@ export const logos = {
         ),
       },
       {
+        name: 'firebase',
+        logo: (
+          <img
+            src='src/assets/logos/firebase-removebg.png'
+            alt='typescript'
+            className='logo-secondary'
+          />
+        ),
+      },
+      {
+        name: 'storybook',
+        logo: (
+          <img src='src/assets/logos/storybook.png' alt='typescript' className='logo-secondary' />
+        ),
+      },
+      {
         name: 'framer',
         logo: <FiFramer className='logo-secondary' />,
       },
@@ -102,6 +115,18 @@ export const logos = {
   backend: {
     main: [
       {
+        name: 'nodejs',
+        logo: <FaNodeJs color='#5A8147' className='logo-main' />,
+      },
+      {
+        name: 'mongodb',
+        logo: <SiMongodb color='#4BA13E' className='logo-main' />,
+      },
+      {
+        name: 'express',
+        logo: <SiExpress color='#5A8147' className='logo-main' />,
+      },
+      {
         name: 'bash',
         logo: (
           <img
@@ -112,20 +137,13 @@ export const logos = {
         ),
       },
       {
-        name: 'express',
-        logo: <SiMocha size={mainLogoSize} color='#866244' className='logo-main' />,
-      },
-      {
         name: 'Postgres',
-        logo: <SiPostgresql size={mainLogoSize} color='#00CDF0' className='logo-main' />,
+        logo: <SiPostgresql color='#00CDF0' className='logo-main' />,
       },
-      {
-        name: 'nodejs',
-        logo: <FaNodeJs size={mainLogoSize} color='#5A8147' className='logo-main' />,
-      },
+
       {
         name: 'MySQL',
-        logo: <SiMysql size={mainLogoSize} className='logo-main' />,
+        logo: <SiMysql className='logo-main' />,
       },
     ],
     secondary: [],

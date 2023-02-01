@@ -13,7 +13,7 @@ import List from './list/List';
 
 function Skills() {
   const topic = 'Skills';
-  const slideTitles = ['List', 'Certificates', 'Cloud'];
+  const slideTitles = ['List', 'Cloud', 'Certificates'];
   const [slideIndex, setSlideIndex] = useState<number>(0);
 
   const isMdScreen = useMediaQuery({ query: '(min-width: 768px)' });

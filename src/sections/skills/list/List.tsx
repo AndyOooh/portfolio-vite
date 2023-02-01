@@ -7,7 +7,7 @@ import cn from 'classnames';
 import { useWindowSize } from 'usehooks-ts';
 
 function List() {
-  const [showSkillArea, setshowSkillArea] = useState('Frontend');
+  const [showSkillArea, setshowSkillArea] = useState('Intro');
 
   const isShortScreen = useMediaQuery({ query: '(max-height: 800px)' });
   const isMdScreen = useMediaQuery({ query: '(min-width: 768px)' });
@@ -46,28 +46,32 @@ function List() {
         </div>
         {skillAreas
           .filter(skillArea => skillArea.area === showSkillArea)
-          .map(({ area, textLong, textShort, logosMain, logosSecondary }: SkillArea) => (
-            <div key={area} className='flex-center gap-4 h-full'>
-              <div className='text-long'>{isShortScreen && !isMdScreen ? textShort : textLong}</div>
-              <div className='logos'>
-                {logosMain.map(logo => (
-                  <div key={logo.name} className={logoClass}>
-                    {logo.logo}{' '}
-                  </div>
-                ))}
-              </div>
-              {logosSecondary ? (
+          .map(
+            ({ area, textLong, textmedium, textShort, logosMain, logosSecondary }: SkillArea) => (
+              <div key={area} className='flex-center gap-6 h-full'>
+                <div className='text-long'>
+                  {isSmallScreen ? textShort : isNarrowScreen ? textmedium : textLong}
+                </div>
                 <div className='logos'>
-                  {logosSecondary.map(logo => (
-                    // <div key={logo.name} className={logoClass + logo.name === 'Redux' ? 'p-4' : ''}>
+                  {logosMain.map(logo => (
                     <div key={logo.name} className={logoClass}>
                       {logo.logo}{' '}
                     </div>
                   ))}
                 </div>
-              ) : null}
-            </div>
-          ))}
+                {logosSecondary ? (
+                  <div className='logos'>
+                    {logosSecondary.map(logo => (
+                      // <div key={logo.name} className={logoClass + logo.name === 'Redux' ? 'p-4' : ''}>
+                      <div key={logo.name} className={logoClass}>
+                        {logo.logo}{' '}
+                      </div>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
+            )
+          )}
       </div>
     </>
   );

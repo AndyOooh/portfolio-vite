@@ -22,7 +22,7 @@ function SlideCard(project: ProjectType) {
   });
 
   const detailsClass = cn({
-    'flex gap-2': true,
+    'flex gap-2 px-2': true,
     'flex-col justify-center w-2/5': wide,
     'flex-col md:flex-row md:items-start md:px-4': !wide,
   });
