@@ -1,16 +1,25 @@
 import {
   SiExpress,
-  SiMocha,
+  // SiMocha,
   SiMongodb,
   SiMysql,
   SiPostgresql,
-  SiRedux,
+  SiPostman,
+  // SiRedux,
   SiTailwindcss,
   SiTypescript,
 } from 'react-icons/si';
 import { FaNodeJs, FaReact, FaSass } from 'react-icons/fa';
-import { TiPlus } from 'react-icons/ti';
+// import { TiPlus } from 'react-icons/ti';
 import { FiFramer } from 'react-icons/fi';
+
+import turboRepo from 'assets/logos/turborepo.png';
+import nextJs from 'assets/logos/nextjs2.png';
+import redux from 'assets/logos/redux2-removebg.png';
+import firebase from 'assets/logos/firebase-removebg.png';
+import storybook from 'assets/logos/storybook.png';
+import bash from 'assets/logos/bash-removebg.png';
+import postman from 'assets/logos/postman.png';
 
 export const logos = {
   intro: {
@@ -39,19 +48,11 @@ export const logos = {
       },
       {
         name: 'turborepo',
-        logo: (
-          <img src='src/assets/logos/turborepo.png' alt='turborepo' className='logo-secondary' />
-        ),
+        logo: <img src={turboRepo} alt='turborepo' className='logo-secondary' />,
       },
       {
         name: 'nextjs',
-        logo: (
-          <img
-            src='src/assets/logos/nextjs2.png'
-            alt='typescript'
-            className='logo-secondary bg-white/80'
-          />
-        ),
+        logo: <img src={nextJs} alt='nextjs' className='logo-secondary bg-white/80' />,
       },
     ],
   },
@@ -63,39 +64,19 @@ export const logos = {
       },
       {
         name: 'nextjs',
-        logo: (
-          <img
-            src='src/assets/logos/nextjs2.png'
-            alt='typescript'
-            className='logo-secondary bg-white/80'
-          />
-        ),
+        logo: <img src={nextJs} alt='nextjs' className='logo-secondary bg-white/80' />,
       },
       {
         name: 'redux',
-        logo: (
-          <img
-            src='src/assets/logos/redux2-removebg.png'
-            alt='typescript'
-            className='logo-secondary'
-          />
-        ),
+        logo: <img src={redux} alt='redux' className='logo-secondary' />,
       },
       {
         name: 'firebase',
-        logo: (
-          <img
-            src='src/assets/logos/firebase-removebg.png'
-            alt='typescript'
-            className='logo-secondary'
-          />
-        ),
+        logo: <img src={firebase} alt='firebase' className='logo-secondary' />,
       },
       {
         name: 'storybook',
-        logo: (
-          <img src='src/assets/logos/storybook.png' alt='typescript' className='logo-secondary' />
-        ),
+        logo: <img src={storybook} alt='storybook' className='logo-secondary' />,
       },
       {
         name: 'framer',
@@ -128,22 +109,24 @@ export const logos = {
       },
       {
         name: 'bash',
-        logo: (
-          <img
-            src='src/assets/logos/bash-removebg.png'
-            alt='typescript'
-            className='logo-secondary'
-          />
-        ),
+        logo: <img src={bash} alt='bash' className='logo-secondary' />,
       },
       {
         name: 'Postgres',
         logo: <SiPostgresql color='#00CDF0' className='logo-main' />,
       },
+      {
+        name: 'Postman',
+        logo: <SiPostman color='black' className='logo-main bg-[#E1683C]' />,
+      },
+      // {
+      //   name: 'postman',
+      //   logo: <img src={postman} alt='postman' className='logo-secondary bg-white/80' />,
+      // },
 
       {
-        name: 'MySQL',
-        logo: <SiMysql className='logo-main' />,
+        name: 'MySQLRI',
+        logo: <SiMysql color='#F19222' className='logo-main' />,
       },
     ],
     secondary: [],

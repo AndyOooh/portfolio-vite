@@ -9,11 +9,12 @@ import { useWindowSize } from 'usehooks-ts';
 function List() {
   const [showSkillArea, setshowSkillArea] = useState('Intro');
 
-  const isShortScreen = useMediaQuery({ query: '(max-height: 800px)' });
-  const isMdScreen = useMediaQuery({ query: '(min-width: 768px)' });
   const { width, height } = useWindowSize();
-  const isSmallScreen = width * height < 375000;
+  const isSmallScreen = width * height < 300000;
+  const isMediumScreen = width * height < 400000;
+  console.log('🚀  file: List.tsx:16  isMediumScreen', isMediumScreen);
   const isNarrowScreen = width < 415;
+  const isShortScreen = height < 775;
 
   const handleChangeOption = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const { value } = event.target;
@@ -26,8 +27,9 @@ function List() {
 
   const logoClass = cn({
     'logo-wrapper flex-center': true,
-    'w-8': isSmallScreen || isNarrowScreen,
-    'w-12': !isSmallScreen && !isNarrowScreen,
+    'w-8': isMediumScreen || isNarrowScreen,
+    'w-10': isShortScreen && !isNarrowScreen,
+    'w-14': !isMediumScreen && !isNarrowScreen && !isShortScreen,
   });
 
   return (
@@ -48,11 +50,11 @@ function List() {
           .filter(skillArea => skillArea.area === showSkillArea)
           .map(
             ({ area, textLong, textmedium, textShort, logosMain, logosSecondary }: SkillArea) => (
-              <div key={area} className='flex-center gap-6 h-full'>
+              <div key={area} className='flex-center h-full'>
                 <div className='text-long'>
-                  {isSmallScreen ? textShort : isNarrowScreen ? textmedium : textLong}
+                  {isSmallScreen ? textShort : isMediumScreen ? textmedium : textLong}
                 </div>
-                <div className='logos'>
+                <div className='logos mt-4 md:mt-6 lg:mt-8'>
                   {logosMain.map(logo => (
                     <div key={logo.name} className={logoClass}>
                       {logo.logo}{' '}
@@ -60,7 +62,7 @@ function List() {
                   ))}
                 </div>
                 {logosSecondary ? (
-                  <div className='logos'>
+                  <div className='logos mt-4'>
                     {logosSecondary.map(logo => (
                       // <div key={logo.name} className={logoClass + logo.name === 'Redux' ? 'p-4' : ''}>
                       <div key={logo.name} className={logoClass}>

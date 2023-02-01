@@ -1,18 +1,14 @@
-.text-long {
+.skill-text {
+  p {
+    margin-bottom: 0.5rem;
+  }
   span {
     color: var(--main);
   }
 }
 
-option:focus {
-  color: pink;
-}
-select:focus {
-  color: pink;
-}
-
 .logos {
-  width: 90%;
+  width: 95%;
 
   display: flex;
   justify-content: center;
@@ -28,7 +24,6 @@ select:focus {
       border-radius: 50%;
       padding: 0.1rem;
     }
-
   }
   & > div > *:not(:nth-child(5)) {
     box-shadow: 0 0 8px 1.5px var(--main);

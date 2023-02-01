@@ -14,7 +14,7 @@ export const skillAreas: SkillArea[] = [
   {
     area: 'Intro',
     textLong: texts.intro.long,
-    textmedium: texts.intro.long,
+    textmedium: texts.intro.medium,
     textShort: texts.intro.short,
     logosMain: logos.intro.main,
     logosSecondary: logos.intro.secondary,
