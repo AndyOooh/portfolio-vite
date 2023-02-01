@@ -28,8 +28,8 @@ function Skills() {
         modules={[Pagination, Navigation]}
         navigation={isMdScreen}
         pagination={{ clickable: true }}
-        className='flex-1 w-full'>
-        <SwiperSlide className='w-full flex-center'>
+        className='flex-1 w-full h-full'>
+        <SwiperSlide className='w-full flex-center h-full'>
           <List />
         </SwiperSlide>
         <SwiperSlide className='w-full flex-center'>

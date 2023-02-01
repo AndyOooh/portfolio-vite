@@ -24,4 +24,11 @@ export const skillAreas: SkillArea[] = [
     logosMain: logos.frontend.main,
     logosSecondary: logos.frontend.secondary,
   },
+  {
+    area: 'Backend',
+    textLong: texts.backend.long,
+    textShort: texts.backend.short,
+    logosMain: logos.backend.main,
+    logosSecondary: logos.backend.secondary,
+  },
 ];
