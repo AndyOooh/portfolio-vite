@@ -12,12 +12,12 @@ export type SkillArea = {
 
 export const skillAreas: SkillArea[] = [
   {
-    area: 'Intro',
-    textLong: texts.intro.long,
-    textmedium: texts.intro.medium,
-    textShort: texts.intro.short,
-    logosMain: logos.intro.main,
-    logosSecondary: logos.intro.secondary,
+    area: 'Full Stack',
+    textLong: texts.fullStack.long,
+    textmedium: texts.fullStack.medium,
+    textShort: texts.fullStack.short,
+    logosMain: logos.fullStack.main,
+    logosSecondary: logos.fullStack.secondary,
   },
   {
     area: 'Frontend',

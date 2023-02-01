@@ -16,7 +16,7 @@ function Certificates() {
             key={cert.subtitle + cert.title}
             role='button'
             onClick={() => handleToggle(idx + 1)}
-            className={'border-grad-2 hover:scale-125 cursor-pointer'}>
+            className={'border-grad-2 hover:scale-110 cursor-pointer'}>
             <div className='object-cover h-full bg-white'>
               <img src={cert.imageUrl} alt={cert.title} className='object-cover w-full' />
             </div>

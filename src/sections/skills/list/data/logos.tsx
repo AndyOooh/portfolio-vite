@@ -22,7 +22,7 @@ import bash from 'assets/logos/bash-removebg.png';
 import postman from 'assets/logos/postman.png';
 
 export const logos = {
-  intro: {
+  fullStack: {
     main: [
       {
         name: 'mongodb',

@@ -1,12 +1,15 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useState } from 'react';
 import { TagCloudOptions } from 'TagCloud';
 import { TagCloud } from '@frank-mayer/react-tag-cloud';
 import { useMediaQuery } from 'react-responsive';
 
 import './SkillsCloud.scss';
 import { cloudList } from './cloudList';
+import DropDown from '../DropDown';
+import { skillAreas } from '../list/data/listdata';
 
 function SkillsCloud() {
+  const [showSkillArea, setshowSkillArea] = useState('Full Stack');
   const isLgScreen = useMediaQuery({ query: '(min-width: 1024px)' });
   const isMdScreen = useMediaQuery({ query: '(min-width: 768px)' });
 
@@ -22,16 +25,19 @@ function SkillsCloud() {
 
   return (
     <div
-    // className='  '
+      className='h-full w-full sm:w-5/6 max-w-3xl' // this is not tested on all screen sizes
     >
-      <TagCloud
-        options={optionsCb}
-        onClick={(tag: string, ev: MouseEvent) => alert(tag)}
-        onClickOptions={{ passive: true }}
-        className=' ' // seems to disappear if no className with a space
-      >
-        {cloudList}
-      </TagCloud>
+      {/* <DropDown setCurrentOption={setshowSkillArea} options={skillAreas.map(({ area }) => area)} /> */}
+      <div className='h-full flex-center'>
+        <TagCloud
+          options={optionsCb}
+          onClick={(tag: string, ev: MouseEvent) => console.log(tag)}
+          onClickOptions={{ passive: true }}
+          className=' ' // seems to disappear if no className with a space
+        >
+          {cloudList}
+        </TagCloud>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 export const texts = {
-  intro: {
+  fullStack: {
     long: (
       <div className='skill-text'>
         <p>
@@ -13,8 +13,9 @@ export const texts = {
           over development, testing and optimization to deployment is very satisfying.
         </p>
         <p>
-          In addition to building rest APIs with no-sql databases, I also have experience with{' '}
-          <span>relational databases</span> such as MysQL and Postgres, as well as GrapQL.
+          In addition to building <span>REST APIs</span> with no-sql databases, I also have
+          experience with <span>relational databases</span> including MysQL and Postgres, as well as
+          GrapQL.
         </p>
         <p>
           I’m always curious about new technologies. Recently I’ve worked a lot with{' '}
@@ -34,8 +35,8 @@ export const texts = {
           optimization and deployment
         </p>
         <p>
-          In addition to building rest APIs with no-sql databases, I also have experience with{' '}
-          <span>relational databases</span> such as MysQL and Postgres, as well as GrapQL.
+          In addition to building REST APIs with no-sql databases, I also have experience with{' '}
+          <span>relational databases</span> including MysQL and Postgres, as well as GrapQL.
         </p>
         <p>
           I’m always curious about new technologies. Recently I’ve worked a lot with{' '}
@@ -170,8 +171,7 @@ export const texts = {
         </p>
         <p>
           I have experience with <span>BASH</span>, CORS, CSRF, Authentication with{' '}
-          <span>refresh/access</span> tokens, sessions and basic devops operations including
-          CI/CD
+          <span>refresh/access</span> tokens, sessions and basic devops operations including CI/CD
         </p>
       </div>
     ),
