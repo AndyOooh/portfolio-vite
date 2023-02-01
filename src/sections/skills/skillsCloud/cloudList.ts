@@ -1,7 +1,7 @@
 export const cloudList = [
   'JavaScript',
-  'CSS3',
-  'HTML5',
+  'CSS',
+  'HTML',
   'SASS',
   'MongoDB',
   'ReactJS',
@@ -53,7 +53,7 @@ export const cloudList = [
   'Nodemailer',
   'Solidity',
   'Hardhat',
-  'Ethers',
+  'EthersJS',
   'OpenZeppelin',
   'Framer-motion',
   'Jest',
@@ -73,6 +73,5 @@ export const cloudList = [
   'StoryBook',
   'CSRF',
   'Styled Components',
-  'DevOps',
 
 ];
