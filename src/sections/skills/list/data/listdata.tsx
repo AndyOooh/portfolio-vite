@@ -1,0 +1,27 @@
+import { logos } from './logos';
+import { texts } from './texts';
+
+export type SkillArea = {
+  area: string;
+  textLong: JSX.Element;
+  textShort: JSX.Element;
+  logosMain: { name: string; logo: JSX.Element }[];
+  logosSecondary: { name: string; logo: JSX.Element }[];
+};
+
+export const skillAreas: SkillArea[] = [
+  {
+    area: 'Intro',
+    textLong: texts.intro.long,
+    textShort: texts.intro.short,
+    logosMain: logos.intro.main,
+    logosSecondary: logos.intro.secondary,
+  },
+  {
+    area: 'Frontend',
+    textLong: texts.frontend.long,
+    textShort: texts.frontend.short,
+    logosMain: logos.frontend.main,
+    logosSecondary: logos.frontend.secondary,
+  },
+];

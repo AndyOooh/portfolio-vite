@@ -27,8 +27,8 @@ a {
 
 :root {
   --main: rgb(220, 148, 76); // #dc944c;
-  --red: @apply text-red-500;
-  // --red: red;
+  // --red: @apply text-red-500;
+  --red: red;
 }
 
 // Global utils
