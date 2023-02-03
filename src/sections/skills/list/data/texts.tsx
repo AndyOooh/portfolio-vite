@@ -7,7 +7,7 @@ export const texts = {
           stack as my specialty.
         </p>
         <p>
-          I enjoy working in <span>teams</span> and in fast-paced environments. For me, teamwork in
+          I enjoy working in <span>teams</span> and in fast-paced environments. In my opinion teamwork in
           software development is best carried out using agile methodologies. I like to be part of
           the entire <span>project lifecycle</span>. Seeing a project go from product specification
           over development, testing and optimization to deployment is very satisfying.
@@ -27,7 +27,7 @@ export const texts = {
       <div className='skill-text'>
         <p>
           I'm Specialized in <span>Javascript</span> and the MERN stack and enjoy working in
-          fast-paced agile teams. For me, teamwork in software development is best carried out using
+          fast-paced agile teams. In my opinion teamwork in software development is best carried out using
           agile methodologies.
         </p>
         <p>

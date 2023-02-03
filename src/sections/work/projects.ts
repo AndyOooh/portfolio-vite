@@ -34,7 +34,8 @@ export const projects = [
     type: 'Full Stack - Job Test',
     role: 'Test project - solo',
     technologies: ['Turborepo', 'NodeJS', 'Next13'],
-    text: 'A small, mostly frontend, project with emphasis on testing. Users can answer questions to have a result calculated to find out where on the introvert/extrovert spectrum they are',
+    text: 'A small, mostly frontend, project with emphasis on testing. Users can take a test to find out where on the introvert/extrovert spectrum they are',
+    // text: 'A facebook imitation. Users can create and update their profile. They can create and delete posts, comments and likes and they can send, accept and reject friend requests.',
     tags: [
       'TypeScript',
       'BASH',
@@ -57,7 +58,7 @@ export const projects = [
     type: 'Full Stack',
     role: 'Solo project',
     technologies: ['NodeJS', 'React', 'MongoDB', 'Redux'],
-    text: 'A facebook imitation. Users can create and update their profile. They can create and delete posts, comments and likes. They can send, accept and reject friend requests.',
+    text: 'A facebook imitation. Users can create and update their profile. They can create and delete posts, comments and likes and they can send, accept and reject friend requests.',
     tags: [
       'RTK-Query',
       'ExpressJS',
@@ -81,7 +82,7 @@ export const projects = [
     // liveDemo: 'https://encode-client.herokuapp.com/',
     type: 'Frontend - Web3',
     technologies: ['React', 'Solidity', 'EthersJS'],
-    text: 'A decentralized casino and exchange. Users can connect their web3 wallet to exchange tokens on Ethereum, Polygon and play roulette with the native ATY token.',
+    text: 'A decentralized casino and exchange. Users can connect their web3 wallet to exchange tokens on Ethereum and Polygon. They can also play roulette with the native ATY token.',
     tags: [
       'Web3',
       'Hardhat',

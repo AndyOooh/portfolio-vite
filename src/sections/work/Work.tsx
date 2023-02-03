@@ -30,25 +30,26 @@ function Work() {
     <Section id='work' topic={topic} title={slideTitles[slideIndex]}>
       {domLoaded && (
         // <div className='flex-center flex-1 bg-orange-400/10 my-0'
-        <Swiper
-          onSlideChange={({ realIndex }) => setSlideIndex(realIndex)}
-          spaceBetween={30}
-          // effect={'fade'}
-          loop={true}
-          // modules={[EffectFade, Navigation, Pagination]}
-          modules={[Navigation, Pagination]}
-          navigation={isMdScreen}
-          pagination={{
-            clickable: true,
-            // el: '.swiper-pagination',
-          }}
-          className='flex-1 w-full rounded-xl border-2 border-primary/50 p-2'>
-          {projects.map(project => (
-            <SwiperSlide key={project.title}>
-              <SlideCard {...project} key={project.title} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        // <div className='flex-center h-full w-full sm:w-5/6 max-w-3xl'>
+          <Swiper
+            onSlideChange={({ realIndex }) => setSlideIndex(realIndex)}
+            spaceBetween={30}
+            // effect={'fade'}
+            loop={true}
+            // modules={[EffectFade, Navigation, Pagination]}
+            modules={[Navigation, Pagination]}
+            navigation={isMdScreen}
+            pagination={{
+              clickable: true,
+              // el: '.swiper-pagination',
+            }}
+            className='flex-1 flex-center w-full '>
+            {projects.map(project => (
+              <SwiperSlide key={project.title}>
+                <SlideCard {...project} key={project.title} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         // </div>
       )}
     </Section>

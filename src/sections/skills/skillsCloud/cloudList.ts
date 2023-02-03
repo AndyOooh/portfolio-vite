@@ -73,5 +73,6 @@ export const cloudList = [
   'StoryBook',
   'CSRF',
   'Styled Components',
+  'Swagger',
 
 ];

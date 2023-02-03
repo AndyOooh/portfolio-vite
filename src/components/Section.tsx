@@ -35,7 +35,7 @@ function Section({ children, id, topic, title, between, center }: SectionProps) 
         ) : null}
         {/* sould I add a flex box with centering here? as an option? which options o I need? already have center (including title) and between which is only good if have tee elements */}
         {/* {center ? <div className='flex-center'>{children}</div> : children} */}
-        {center ? <div className='flex-1'>{children}</div> : children}
+        {center ? <div className='flex-1'>{children}</div> :  children}
         {/* <div className='h-12 w-full'></div> */}
       </motion.div>
     </section>

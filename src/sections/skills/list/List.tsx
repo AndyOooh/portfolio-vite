@@ -25,7 +25,8 @@ function List() {
 
   return (
     <>
-      <div className='sm:w-5/6 max-w-3xl h-full mb-10'>
+      {/* <div className='sm:w-5/6 max-w-3xl h-full mb-10'> */}
+      <div className='h-full mb-10 sm:w-5/6 max-w-3xl'>
         <DropDown
           setCurrentOption={setshowSkillArea}
           options={skillAreas.map(({ area }) => area)}

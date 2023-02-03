@@ -18,7 +18,7 @@ function CertificateModal({ certificate: { imageUrl, title, link, course }, onCl
     <div
       ref={ref}
       onClick={onClose}
-      className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 card card-compact gap-2 rounded-none w-11/12 md:w-3/5'>
+      className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 card card-compact gap-2 rounded-none w-11/12 md:w-3/5 lg:w-1/2'>
       <figure className='border-grad-2'>
         <img src={imageUrl} alt={title} className='w-full' />
       </figure>

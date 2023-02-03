@@ -14,6 +14,7 @@ export const styles = {
 
   sectionWrapper: `
   w-[95%]
+  
 
   h-[calc(100vh-2rem-(49.6px/2))]
   md:h-[calc(100vh-6rem)]
