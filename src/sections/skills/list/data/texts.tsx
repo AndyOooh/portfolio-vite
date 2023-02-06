@@ -9,7 +9,7 @@ export const texts = {
         <p>
           I enjoy working in <span>teams</span> and in fast-paced environments. In my opinion teamwork in
           software development is best carried out using agile methodologies. I like to be part of
-          the entire <span>project lifecycle</span>. Seeing a project go from product specification
+          the entire <span>development lifecycle</span>. Seeing a project go from product specification
           over development, testing and optimization to deployment is very satisfying.
         </p>
         <p>
@@ -31,7 +31,7 @@ export const texts = {
           agile methodologies.
         </p>
         <p>
-          I'm Experienced throughout the full <span>project lifecycle</span>, including testing,
+          I'm Experienced throughout the full <span>development lifecycle</span>, including testing,
           optimization and deployment
         </p>
         <p>
