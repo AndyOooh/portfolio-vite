@@ -4,11 +4,13 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 import Section from 'components/Section';
 import { nameVariants, pVariants } from 'motion/landing.motion';
+// import resume from 'assets/Andreas Oee - Junior Full Stack - Resume.pdf';
+import resume from 'assets/Andreas Oee - Full Stack Web Developer - Resume.pdf';
 
 function Landing() {
   const [pIndex, setPIndex] = useState(0);
   const pTexts = ['Frontend', 'Backend', 'Web3'];
-  const resume = './Andreas Oee - Junior Full Stack - Resume.pdf'
+  // const resume = './Andreas Oee - Junior Full Stack - Resume.pdf'
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -55,8 +57,16 @@ function Landing() {
         </div>
         <p className='developer text-4xl md:text-6xl font-black'>Developer</p>
         <div className='flex gap-2 mt-6 mx-auto w-3/5'>
-          <a href={resume} target='_blank' rel='noreferrer' className='flex-1 btn btn-sm btn-primary btn-outline'>Resumé</a>
-          <a href='#contact' className='flex-1 btn btn-sm btn-primary btn-outline'>Contact</a>
+          <a
+            href={resume}
+            target='_blank'
+            rel='noreferrer'
+            className='flex-1 btn btn-sm btn-primary btn-outline'>
+            Resumé
+          </a>
+          <a href='#contact' className='flex-1 btn btn-sm btn-primary btn-outline'>
+            Contact
+          </a>
         </div>
       </div>
     </Section>
