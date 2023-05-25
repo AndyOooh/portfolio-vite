@@ -20,7 +20,7 @@ function About() {
           find the tools I needed for my crypto projects. After playing around with different{' '}
           <span>APIs</span> in the backend, the frontend quickly caught my interest as well. <br />
           <br />
-          <span>Fast-forward</span> to today, and I’ve completed dozens of courses,{' '}
+          <span>Fast-forward</span> to today, I now have +1 year of working experience as a <span>full stack developer</span> and I’ve completed dozens of courses,{' '}
           <span>bootcamps</span>, personal projects and a few collaborations.
         </p>
         <div className='flex gap-4 w-1/2 mx-auto'>
