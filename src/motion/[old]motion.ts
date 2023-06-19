@@ -3,6 +3,8 @@ type Type = 'string';
 type Delay = number;
 type Duration = number;
 
+// test
+
 export type SlideInOutProps = {
   direction: Direction;
   type: Type;
