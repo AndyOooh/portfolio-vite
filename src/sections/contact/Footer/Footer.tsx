@@ -38,7 +38,7 @@ function Footer() {
   return (
     <footer className='flex-center rounded gap-2 bg-primary/20 py-2 w-full'>
       <a href='#' className='footer__logo'>
-        andyo.xyz
+        andyo.site
       </a>
 
       <div className='flex justify-center gap-1'>
