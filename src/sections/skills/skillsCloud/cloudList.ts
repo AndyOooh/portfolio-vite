@@ -74,5 +74,59 @@ export const cloudList = [
   'CSRF',
   'Styled Components',
   'Swagger',
+];
 
+const cloudListNew = [
+  // 'git',
+  // 'REST API',
+  // 'Postman',
+  // 'ExpressJS',
+
+  /* def */
+  'JavaScript',
+  'NodeJS',
+  'ReactJS',
+  'Redux',
+  'NextJS',
+  'TypeScript',
+  'Docker',
+  'Kubernetes',
+
+  'Solidity',
+  'Hardhat',
+  'EthersJS',
+
+  'TailwindCSS',
+  'SASS',
+  'StoryBook',
+  'Framer-motion',
+
+  'BASH',
+  'Turborepo',
+
+  'Jest',
+  'Mocha',
+
+  'MongoDB',
+  'MySQL',
+  'PostgreSQL',
+
+  'AWS',
+  'Firebase',
+  'GCP',
+
+  /* prob */
+  'GraphQL',
+  'NGINX',
+
+  // 'SuperTest',
+  // 'React Testing Library',
+  // 'Cypress',
+
+  // 'OpenZeppelin',
+
+  /* prob not */
+  // 'daisyUI',
+  // 'CSS',
+  // 'HTML',
 ];
