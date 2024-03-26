@@ -16,12 +16,15 @@ function About() {
           I spend my days in the 'big mango' with my girlfriend, playing football and{' '}
           <span>building web</span> things.
           <br />
+          <br />
           <span>My interest</span> in web development began in <span>2020</span> when I couldn't
           find the tools I needed for my crypto projects. After playing around with different{' '}
           <span>APIs</span> in the backend, the frontend quickly caught my interest as well. <br />
           <br />
-          <span>Fast-forward</span> to today, I now have +1 year of working experience as a <span>full stack developer</span> and I’ve completed dozens of courses,{' '}
-          <span>bootcamps</span>, personal projects and a few collaborations.
+          <span>Fast-forward</span> to today, I now have <span>+2 years</span> of working experience
+          as afull stack developer. In <span>my current role</span>my current role I lead a team of
+          3-4 developers
+          <span> responsible for</span> integrations and other backend projects.
         </p>
         <div className='flex gap-4 w-1/2 mx-auto'>
           <div className='inner-shad relative rounded-full flex-1 overflow-hidden h-full aspect-square'>

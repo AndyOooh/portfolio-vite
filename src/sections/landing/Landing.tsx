@@ -4,8 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 import Section from 'components/Section';
 import { nameVariants, pVariants } from 'motion/landing.motion';
-// import resume from 'assets/Andreas Oee - Junior Full Stack - Resume.pdf';
-import resume from 'assets/Andreas Oee - Full Stack Web Developer - Resume.pdf';
+import resume from 'assets/Andreas Oee - Full Stack Developer - Resume.pdf';
 
 function Landing() {
   const [pIndex, setPIndex] = useState(0);
