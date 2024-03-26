@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 import Section from 'components/Section';
 import { nameVariants, pVariants } from 'motion/landing.motion';
-import resume from 'assets/Andreas Oee - Full Stack Developer - Resume.pdf';
+import resume from 'assets/Andreas Oee - Full Stack Developer - Resume.pdf'; // why does formatting not work in prod?
 
 function Landing() {
   const [pIndex, setPIndex] = useState(0);
