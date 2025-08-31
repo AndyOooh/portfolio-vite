@@ -22,7 +22,7 @@ function About() {
           <span>APIs</span> in the backend, the frontend quickly caught my interest as well. <br />
           <br />
           <span>Fast-forward</span> to today, I now have <span>+2 years</span> of working experience
-          as afull stack developer. In <span>my current role</span>my current role I lead a team of
+          as afull stack developer. In <span>my current role</span> I lead a team of
           3-4 developers
           <span> responsible for</span> integrations and other backend projects.
         </p>
