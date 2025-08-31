@@ -1,26 +1,26 @@
-import Section from 'components/Section';
-import { useRef, useState } from 'react';
-import { useMediaQuery } from 'react-responsive';
+import Section from 'components/Section'
+import { useRef, useState } from 'react'
+import { useMediaQuery } from 'react-responsive'
 
-import Slider from 'react-slick';
-import Certificates from 'sections/skills/certificates/CertificatesSlick';
-import List from 'sections/skills/list/List';
-import SkillsCloud from 'sections/skills/skillsCloud/SkillsCloud';
+import Slider from 'react-slick'
+import Certificates from 'sections/skills/certificates/CertificatesSlick'
+import List from 'sections/skills/list/List'
+import SkillsCloud from 'sections/skills/skillsCloud/SkillsCloud'
 
-import './ReactSlick.scss';
+import './ReactSlick.scss'
 
 // import 'slick-carousel/slick/slick.css';
 // import 'slick-carousel/slick/slick-theme.css';
 
 function ReactSlick() {
-  const sliderRef = useRef<Slider>(null);
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const isMdScreen = useMediaQuery({ query: '(min-width: 768px)' });
+  const sliderRef = useRef<Slider>(null)
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const isMdScreen = useMediaQuery({ query: '(min-width: 768px)' })
   const slides = [
     { name: 'slide1', component: <SkillsCloud /> },
     { name: 'slide2', component: <Certificates /> },
     { name: 'slide3', component: <List /> },
-  ];
+  ]
 
   const settings = {
     dots: true,
@@ -32,44 +32,54 @@ function ReactSlick() {
     arrows: false,
     // beforeChange: (current: any, next: any) => setCurrentSlide(next),
     appendDots: (dots: any) => (
-      <div className='bg-green-500 border-4 border-yellow-300'>
+      <div className="bg-green-500 border-4 border-yellow-300">
         <ul> {dots} </ul>
       </div>
     ),
-  };
+  }
 
   const handleClickNavigation = (direction: string) => {
     if (direction === 'prev') {
-      sliderRef.current?.slickPrev();
-      currentSlide === 0 ? setCurrentSlide(slides.length - 1) : setCurrentSlide(currentSlide - 1);
+      sliderRef.current?.slickPrev()
+      currentSlide === 0
+        ? setCurrentSlide(slides.length - 1)
+        : setCurrentSlide(currentSlide - 1)
     } else {
-      sliderRef.current?.slickNext();
-      currentSlide === slides.length - 1 ? setCurrentSlide(0) : setCurrentSlide(currentSlide + 1);
+      sliderRef.current?.slickNext()
+      currentSlide === slides.length - 1
+        ? setCurrentSlide(0)
+        : setCurrentSlide(currentSlide + 1)
     }
-    return;
-  };
+    return
+  }
 
   const navigation = (
-    <div className='absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2'>
-      <button className='text-5xl text-primary' onClick={() => handleClickNavigation('prev')}>
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <button
+        className="text-5xl text-primary"
+        onClick={() => handleClickNavigation('prev')}
+      >
         ❮
       </button>
-      <button className='btn btn-circle btn-primary' onClick={() => handleClickNavigation('next')}>
+      <button
+        className="btn btn-circle btn-primary"
+        onClick={() => handleClickNavigation('next')}
+      >
         ❯
       </button>
     </div>
-  );
+  )
 
   const handleClickPagination = (e: any) => {
-    const index = e.target.value;
-    sliderRef.current?.slickGoTo(index);
-    setCurrentSlide(index);
-  };
+    const index = e.target.value
+    sliderRef.current?.slickGoTo(index)
+    setCurrentSlide(index)
+  }
 
   const pagination = (
-    <div className='flex justify-center w-full py-2 gap-[2px] mt-8'>
+    <div className="flex justify-center w-full py-2 gap-[2px] mt-8">
       {slides.map((title, index) => {
-        console.log('🚀  file: ReactSlick.tsx:71  index', index);
+        console.log('🚀  file: ReactSlick.tsx:71  index', index)
         return (
           <button
             key={index}
@@ -77,23 +87,24 @@ function ReactSlick() {
             className={`w-3 h-3 mx-1 rounded-full ${
               currentSlide === index ? 'bg-primary' : 'bg-gray-300/25'
             }`}
-            onClick={handleClickPagination}></button>
-        );
+            onClick={handleClickPagination}
+          ></button>
+        )
       })}
     </div>
-  );
+  )
 
   return (
-    <Section id='rpc' title='React Slick' topic='Does it work'>
-      <div className='w-full flex-center h-full'>
-        <div className='relative w-full md:w-5/6 h-full'>
-          <Slider ref={sliderRef} {...settings} className='relative'>
+    <Section id="rpc" title="React Slick" topic="Does it work">
+      <div className="w-full flex-center h-full">
+        <div className="relative w-full md:w-5/6 h-full">
+          <Slider ref={sliderRef} {...settings} className="relative">
             {slides.map((slide, index) => {
               return (
-                <div key={slide.name} className='px-2'>
+                <div key={slide.name} className="px-2">
                   {slide.component}
                 </div>
-              );
+              )
             })}
           </Slider>
         </div>
@@ -101,7 +112,7 @@ function ReactSlick() {
       {pagination}
       {isMdScreen ? navigation : null}
     </Section>
-  );
+  )
 }
 
-export default ReactSlick;
+export default ReactSlick

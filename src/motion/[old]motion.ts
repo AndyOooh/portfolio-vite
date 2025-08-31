@@ -1,16 +1,16 @@
-type Direction = 'left' | 'right' | 'up' | 'down';
-type Type = 'string';
-type Delay = number;
-type Duration = number;
+type Direction = 'left' | 'right' | 'up' | 'down'
+type Type = 'string'
+type Delay = number
+type Duration = number
 
 // test
 
 export type SlideInOutProps = {
-  direction: Direction;
-  type: Type;
-  delay: Delay;
-  duration: Duration;
-};
+  direction: Direction
+  type: Type
+  delay: Delay
+  duration: Duration
+}
 
 export const navVariants = {
   hidden: {
@@ -31,7 +31,7 @@ export const navVariants = {
       delay: 0.5,
     },
   },
-};
+}
 
 export const slideIn = ({ direction, type, delay, duration }: SlideInOutProps) => ({
   hidden: {
@@ -48,7 +48,7 @@ export const slideIn = ({ direction, type, delay, duration }: SlideInOutProps) =
       ease: 'easeOut',
     },
   },
-});
+})
 
 export const staggerContainer = (staggerChildren: any, delayChildren: any) => ({
   hidden: {},
@@ -58,7 +58,7 @@ export const staggerContainer = (staggerChildren: any, delayChildren: any) => ({
       delayChildren,
     },
   },
-});
+})
 
 export const textVariant = (delay: number) => ({
   hidden: {
@@ -74,7 +74,7 @@ export const textVariant = (delay: number) => ({
       delay,
     },
   },
-});
+})
 
 export const textContainer = {
   hidden: {
@@ -84,7 +84,7 @@ export const textContainer = {
     opacity: 1,
     transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
   }),
-};
+}
 
 export const textVariant2 = {
   hidden: {
@@ -99,7 +99,7 @@ export const textVariant2 = {
       ease: 'easeIn',
     },
   },
-};
+}
 
 export const fadeIn = ({ direction, type, delay, duration }: SlideInOutProps) => ({
   hidden: {
@@ -118,7 +118,7 @@ export const fadeIn = ({ direction, type, delay, duration }: SlideInOutProps) =>
       ease: 'easeOut',
     },
   },
-});
+})
 
 export const planetVariants = (direction: Direction) => ({
   hidden: {
@@ -134,7 +134,7 @@ export const planetVariants = (direction: Direction) => ({
       delay: 0.5,
     },
   },
-});
+})
 
 export const zoomIn = (delay: Delay, duration: Duration) => ({
   hidden: {
@@ -151,7 +151,7 @@ export const zoomIn = (delay: Delay, duration: Duration) => ({
       ease: 'easeOut',
     },
   },
-});
+})
 
 export const footerVariants = {
   hidden: {
@@ -172,4 +172,4 @@ export const footerVariants = {
       delay: 0.5,
     },
   },
-};
+}

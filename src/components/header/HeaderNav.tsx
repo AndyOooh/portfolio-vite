@@ -1,28 +1,31 @@
-import { motion } from 'framer-motion';
-import { headerVariants } from 'motion/header.motion';
-import { BsGithub, BsLinkedin } from 'react-icons/bs';
-import { styles } from 'styles';
-import { SectionLink } from './Header';
+import { motion } from 'framer-motion'
+import { headerVariants } from 'motion/header.motion'
+import { BsGithub, BsLinkedin } from 'react-icons/bs'
+import { styles } from 'styles'
+import { SectionLink } from './Header'
 
-import aoGoldImg from 'assets/ao/ao-gold-frame-trans.png';
+import aoGoldImg from 'assets/ao/ao-gold-frame-trans.png'
 
 export type NavProps = {
-  currentHash: string | null;
-  sectionLinks: SectionLink[];
-};
+  currentHash: string | null
+  sectionLinks: SectionLink[]
+}
 
 function HeaderNav({ currentHash, sectionLinks }: NavProps) {
-  const imageWrapperClasses = 'relative h-full aspect-square overflow-hidden border-b-2';
+  const imageWrapperClasses = 'relative h-full aspect-square overflow-hidden border-b-2'
 
-  const navigation = sectionLinks.map(link => {
+  const navigation = sectionLinks.map((link) => {
     return (
-      <li key={link.hash} className='rounded-none hover:text-white/70'>
+      <li key={link.hash} className="rounded-none hover:text-white/70">
         <a
           // smooth
           href={link.hash}
           className={
-            currentHash === link.hash ? 'rounded-none border-b-2 border-red-500 ' : 'rounded none'
-          }>
+            currentHash === link.hash
+              ? 'rounded-none border-b-2 border-red-500 '
+              : 'rounded none'
+          }
+        >
           {link.hash.slice(1)}
         </a>
         {/* <a
@@ -31,51 +34,55 @@ function HeaderNav({ currentHash, sectionLinks }: NavProps) {
           {link.name.slice(1)}
         </a> */}
       </li>
-    );
-  });
+    )
+  })
 
   return (
     <motion.header
       variants={headerVariants}
-      initial='hidden'
-      animate='visible'
+      initial="hidden"
+      animate="visible"
       // ref={headerRef}
       // onScroll={getPosition}
-      className='z-50 fixed top-0 left-0 w-full h-16 flex items-center 
+      className="z-50 fixed top-0 left-0 w-full h-16 flex items-center 
       backdrop-blur-sm 
       py-2
       shadow-lg shadow-red-500/50
-      '>
+      "
+    >
       {/* <div className='h-full w-full lg:w-4/5 max-w-7xl flex justify-between items-center mx-4 '> */}
       <div className={`${styles.innerWidth} h-full`}>
-        <div className='w-[95%] h-full flex justify-between items-center mx-auto'>
+        <div className="w-[95%] h-full flex justify-between items-center mx-auto">
           <a
             // smooth
-            href='/#'
+            href="/#"
             className={
               currentHash === ''
                 ? ` border-red-500 ${imageWrapperClasses}`
                 : ` border-transparent ${imageWrapperClasses}`
-            }>
-            <img src={aoGoldImg} alt='icon' className='p-2 text-orange-400' />
+            }
+          >
+            <img src={aoGoldImg} alt="icon" className="p-2 text-orange-400" />
           </a>
-          <div className='flex justify-center items-center gap-8'>
-            <nav className='hidden md:block'>
-              <ul className='menu menu-horizontal'>{navigation}</ul>
+          <div className="flex justify-center items-center gap-8">
+            <nav className="hidden md:block">
+              <ul className="menu menu-horizontal">{navigation}</ul>
             </nav>
-            <div className='h-full flex justify-center items-center'>
+            <div className="h-full flex justify-center items-center">
               <a
-                href='https://www.linkedin.com/in/andreas-oee'
-                target='_blank'
-                rel='noreferrer'
-                className='p-2 hover:text-white/70 h-full'>
+                href="https://www.linkedin.com/in/andreas-oee"
+                target="_blank"
+                rel="noreferrer"
+                className="p-2 hover:text-white/70 h-full"
+              >
                 <BsLinkedin size={'1.2rem'} />
               </a>
               <a
-                href='https://github.com/AndyOooh'
-                target='_blank'
-                rel='noreferrer'
-                className='p-2 hover:text-white/70'>
+                href="https://github.com/AndyOooh"
+                target="_blank"
+                rel="noreferrer"
+                className="p-2 hover:text-white/70"
+              >
                 <BsGithub size={'1.2rem'} />
               </a>
               {/* <a
@@ -98,7 +105,7 @@ function HeaderNav({ currentHash, sectionLinks }: NavProps) {
         </div>
       </div>
     </motion.header>
-  );
+  )
 }
 
-export default HeaderNav;
+export default HeaderNav

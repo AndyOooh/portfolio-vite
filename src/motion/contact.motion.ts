@@ -13,4 +13,4 @@ export const formVariants = {
       delay: 0.1,
     },
   },
-};
+}

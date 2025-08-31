@@ -74,7 +74,7 @@ export const cloudList = [
   'CSRF',
   'Styled Components',
   'Swagger',
-];
+]
 
 const cloudListNew = [
   // 'git',
@@ -129,4 +129,4 @@ const cloudListNew = [
   // 'daisyUI',
   // 'CSS',
   // 'HTML',
-];
+]

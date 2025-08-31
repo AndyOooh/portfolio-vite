@@ -1,4 +1,4 @@
-import { ISourceOptions } from 'tsparticles-engine';
+import { ISourceOptions } from 'tsparticles-engine'
 // import { PolygonMaskInlineArrangement, PolygonMaskType } from 'tsparticles-plugin-polygon-mask';
 
 export const particlesOptions = {
@@ -546,4 +546,4 @@ export const particlesOptions = {
   style: {},
   themes: [],
   zLayers: 100,
-} as ISourceOptions;
+} as ISourceOptions

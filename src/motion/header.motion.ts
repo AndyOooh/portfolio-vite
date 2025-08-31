@@ -13,4 +13,4 @@ export const headerVariants = {
       delay: 0.1,
     },
   },
-};
+}

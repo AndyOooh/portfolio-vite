@@ -1,4 +1,3 @@
-
 export const skills = [
   {
     name: 'HTML',
@@ -26,4 +25,4 @@ export const skills = [
       'Tailwind CSS',
     ],
   },
-];
+]

@@ -1,4 +1,4 @@
-import { ISourceOptions } from 'tsparticles-engine';
+import { ISourceOptions } from 'tsparticles-engine'
 
 export const particlesOptions = {
   autoPlay: true,
@@ -579,4 +579,4 @@ export const particlesOptions = {
   themes: [],
   zLayers: 100,
   emitters: [],
-} as ISourceOptions;
+} as ISourceOptions

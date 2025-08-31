@@ -1,14 +1,14 @@
-import { logos } from './logos';
-import { texts } from './texts';
+import { logos } from './logos'
+import { texts } from './texts'
 
 export type SkillArea = {
-  area: string;
-  textLong: JSX.Element;
-  textmedium?: JSX.Element;
-  textShort: JSX.Element;
-  logosMain: { name: string; logo: JSX.Element }[];
-  logosSecondary: { name: string; logo: JSX.Element }[];
-};
+  area: string
+  textLong: JSX.Element
+  textmedium?: JSX.Element
+  textShort: JSX.Element
+  logosMain: { name: string; logo: JSX.Element }[]
+  logosSecondary: { name: string; logo: JSX.Element }[]
+}
 
 export const skillAreas: SkillArea[] = [
   {
@@ -35,4 +35,4 @@ export const skillAreas: SkillArea[] = [
     logosMain: logos.backend.main,
     logosSecondary: logos.backend.secondary,
   },
-];
+]

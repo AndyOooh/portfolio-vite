@@ -73,8 +73,4 @@ export const cloudList = [
   { value: 'MySQL', count: 2 },
   { value: 'Sequelize', count: 2 },
   { value: 'StoryBook', count: 2 },
-];
-
-
-
-
+]

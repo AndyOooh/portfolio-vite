@@ -1,26 +1,26 @@
-import imgJsComplete from 'assets/certificates/udemy-javascript.png';
-import imgFccJsAlgos from 'assets/certificates/fcc_js_algos.png';
-import imgReactComplete from 'assets/certificates/udemy-react.png';
-import imgFccBackend from 'assets/certificates/fcc_backend.png';
-import imgNodeComplete from 'assets/certificates/udemy-node.png';
-import imgCloudinaryIntroNode from 'assets/certificates/cloudinary-intro-node.png';
-import imgJsWeird from 'assets/certificates/udemy-js_weird.png';
-import imgCloudinaryNewUser from 'assets/certificates/cloudinary-new-user.png';
-import imgGithub from 'assets/certificates/udemy-github.png';
-import imgMongoBasics from 'assets/certificates/mongodb-basics.png';
-import imgFacebookClone from 'assets/certificates/udemy-fb_clone.jpg';
-import imgCcWebDev from 'assets/certificates/cc-webdev.png';
-import imgCcCommandLine from 'assets/certificates/cc-command-line.png';
+import imgJsComplete from 'assets/certificates/udemy-javascript.png'
+import imgFccJsAlgos from 'assets/certificates/fcc_js_algos.png'
+import imgReactComplete from 'assets/certificates/udemy-react.png'
+import imgFccBackend from 'assets/certificates/fcc_backend.png'
+import imgNodeComplete from 'assets/certificates/udemy-node.png'
+import imgCloudinaryIntroNode from 'assets/certificates/cloudinary-intro-node.png'
+import imgJsWeird from 'assets/certificates/udemy-js_weird.png'
+import imgCloudinaryNewUser from 'assets/certificates/cloudinary-new-user.png'
+import imgGithub from 'assets/certificates/udemy-github.png'
+import imgMongoBasics from 'assets/certificates/mongodb-basics.png'
+import imgFacebookClone from 'assets/certificates/udemy-fb_clone.jpg'
+import imgCcWebDev from 'assets/certificates/cc-webdev.png'
+import imgCcCommandLine from 'assets/certificates/cc-command-line.png'
 
 export type Certificate = {
-  title: string;
-  subtitle: string;
-  year: string;
-  organisation: string;
-  link: string;
-  course: string;
-  imageUrl: string;
-};
+  title: string
+  subtitle: string
+  year: string
+  organisation: string
+  link: string
+  course: string
+  imageUrl: string
+}
 
 export const certList = [
   {
@@ -29,7 +29,8 @@ export const certList = [
     year: '2022',
     organisation: 'Academind',
     link: 'https://www.youracclaim.com/badges/1b1b1b1b-1b1b-1b1b-1b1b-1b1b1b1b1b1b/public_url',
-    course: 'https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/',
+    course:
+      'https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/',
     // imageUrl: 'src/assets/certificates/udemy-javascript.png',
     imageUrl: imgJsComplete,
   },
@@ -39,7 +40,8 @@ export const certList = [
     year: '2022',
     organisation: 'Free Code Camp',
     link: 'https://www.freecodecamp.org/certification/andy_ohhh/javascript-algorithms-and-data-structures',
-    course: 'https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures',
+    course:
+      'https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures',
     imageUrl: imgFccJsAlgos,
   },
   {
@@ -77,7 +79,8 @@ export const certList = [
     year: '2022',
     organisation: 'Cloudinary Academy',
     link: 'https://ti-user-certificates.s3.amazonaws.com/4338ce4e-f809-4f5a-80f4-1d317c4a390d/8bd81d97-fbaf-4ea8-b1c6-9622a9f9a92e-andreas-oee-7f9369fd-d177-4e0d-9640-caa3545a7fab-certificate.pdf',
-    course: 'https://training.cloudinary.com/learn/course/introduction-for-api-users-developers',
+    course:
+      'https://training.cloudinary.com/learn/course/introduction-for-api-users-developers',
     imageUrl: imgCloudinaryIntroNode,
   },
   {
@@ -95,7 +98,8 @@ export const certList = [
     year: '2022',
     organisation: 'Cloudinary Academy',
     link: 'https://training.cloudinary.com/learning-paths/certified-cloudinary-new-user',
-    course: 'https://training.cloudinary.com/learn/learning-path/certified-cloudinary-new-user',
+    course:
+      'https://training.cloudinary.com/learn/learning-path/certified-cloudinary-new-user',
     imageUrl: imgCloudinaryNewUser,
   },
 
@@ -146,4 +150,4 @@ export const certList = [
     course: 'https://www.codecademy.com/learn/learn-the-command-line',
     imageUrl: imgCcCommandLine,
   },
-] as Certificate[];
+] as Certificate[]

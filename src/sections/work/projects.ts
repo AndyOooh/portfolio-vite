@@ -1,29 +1,29 @@
-import salaryHeroImgRel from 'assets/projectImages/salaryHero.png';
+import salaryHeroImgRel from 'assets/projectImages/salaryHero.png'
 
-import redbook1280Profile from 'assets/projectImages/redbook/1280-login.png';
-import redbook1280Home from 'assets/projectImages/redbook/1280-home.png';
-import redbook2560Home from 'assets/projectImages/redbook/2560-home.png';
+import redbook1280Profile from 'assets/projectImages/redbook/1280-login.png'
+import redbook1280Home from 'assets/projectImages/redbook/1280-home.png'
+import redbook2560Home from 'assets/projectImages/redbook/2560-home.png'
 
-import persona1280Result from 'assets/projectImages/persona/1280-result.png';
-import persona1280Start from 'assets/projectImages/persona/1280-start.png';
+import persona1280Result from 'assets/projectImages/persona/1280-result.png'
+import persona1280Start from 'assets/projectImages/persona/1280-start.png'
 
-import lotteryBallot from 'assets/projectImages/lottery/1280-ballot.png';
-import lotteryLottery from 'assets/projectImages/lottery/1280-lottery.png';
+import lotteryBallot from 'assets/projectImages/lottery/1280-ballot.png'
+import lotteryLottery from 'assets/projectImages/lottery/1280-lottery.png'
 
-import sincityDex from 'assets/projectImages/sinCity/1280-dex.png';
-import sincityRoulette from 'assets/projectImages/sinCity/1280-roulette.png';
+import sincityDex from 'assets/projectImages/sinCity/1280-dex.png'
+import sincityRoulette from 'assets/projectImages/sinCity/1280-roulette.png'
 
 export type ProjectType = {
-  video?: string;
-  image?: string;
-  title: string;
-  gitHub: string;
-  liveDemo: string;
-  type: string;
-  technologies: string[];
-  text?: string;
-  tags?: string[];
-};
+  video?: string
+  image?: string
+  title: string
+  gitHub: string
+  liveDemo: string
+  type: string
+  technologies: string[]
+  text?: string
+  tags?: string[]
+}
 
 export const projects = [
   {
@@ -127,4 +127,4 @@ export const projects = [
     text: 'A small backend project with emphasis on CRUD operations on a PostgreSQL database. Application admins can CRUD client-admins, who can CRUD employees to keep track of their salaries.',
     tags: ['Postman', 'jsonwebtoken', 'bcrypt', 'pgAdmin', 'authentication'],
   },
-] as ProjectType[];
+] as ProjectType[]

@@ -1,34 +1,36 @@
-import { NavProps } from 'components/header/HeaderNav';
-import { AiOutlineHome } from 'react-icons/ai';
+import { NavProps } from 'components/header/HeaderNav'
+import { AiOutlineHome } from 'react-icons/ai'
 
-import './FloatNav.scss';
+import './FloatNav.scss'
 
 function FloatNav({ currentHash, sectionLinks }: NavProps) {
-  const menu = sectionLinks.map(link => {
+  const menu = sectionLinks.map((link) => {
     return (
       <a
         // smooth
         href={link.hash}
         className={currentHash === link.hash ? 'active' : ''}
-        key={link.hash}>
+        key={link.hash}
+      >
         {link.icon}
       </a>
-    );
-  });
+    )
+  })
 
   return (
     <>
-      <nav className='floatNav'>
+      <nav className="floatNav">
         <a
           // smooth
-          href='/#'
-          className={currentHash === '' ? 'active' : ''}>
+          href="/#"
+          className={currentHash === '' ? 'active' : ''}
+        >
           <AiOutlineHome />
         </a>
         {menu}
       </nav>
     </>
-  );
+  )
 }
 
-export default FloatNav;
+export default FloatNav

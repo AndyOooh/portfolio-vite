@@ -1,16 +1,16 @@
-import React from 'react';
-import { TagCloud } from 'react-tagcloud';
-import { cloudList } from './cloudList';
+import React from 'react'
+import { TagCloud } from 'react-tagcloud'
+import { cloudList } from './cloudList'
 
-type Props = {};
+type Props = {}
 
 type Tag = {
-  value: string;
-  count: number;
-  key?: string;
-  color?: string;
-  props?: {};
-};
+  value: string
+  count: number
+  key?: string
+  color?: string
+  props?: {}
+}
 
 function ReactTagCloud({}: Props) {
   return (
@@ -23,7 +23,7 @@ function ReactTagCloud({}: Props) {
         onClick={(tag: Tag) => alert(`'${tag.value}' was selected!`)}
       />
     </>
-  );
+  )
 }
 
-export default ReactTagCloud;
+export default ReactTagCloud
